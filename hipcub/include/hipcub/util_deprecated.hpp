@@ -59,10 +59,12 @@
     #define HIPCUB_DEPRECATED_BECAUSE(MSG) [[deprecated(MSG)]]
 #endif
 
-#define HIPCUB_DETAIL_DEPRECATED_DEBUG_SYNCHRONOUS                                                 \
-    HIPCUB_DEPRECATED_BECAUSE("The debug_synchronous argument of the hipcub device API functions " \
-                              "is deprecated and no longer has any effect.\n"                      \
-                              "Use the compile-time definition HIPCUB_DEBUG_SYNC instead.")
+// #define HIPCUB_DETAIL_DEPRECATED_DEBUG_SYNCHRONOUS                                                 \
+//     HIPCUB_DEPRECATED_BECAUSE("The debug_synchronous argument of the hipcub device API functions " \
+//                               "is deprecated and no longer has any effect.\n"                      \
+//                               "Use the compile-time definition HIPCUB_DEBUG_SYNC instead.")
+
+#define HIPCUB_DETAIL_DEPRECATED_DEBUG_SYNCHRONOUS
 
 #define HIPCUB_DETAIL_RUNTIME_LOG_DEBUG_SYNCHRONOUS()                                         \
     do                                                                                        \
